@@ -10,7 +10,16 @@ class SampleControllerTest extends TestCase {
 
         $controller = new SampleController();
 
-        $result = $controller->show();
+        $result = $controller->index();
+
+        $this->assertNotEmpty($result, "Sample Controller test not empty");
+    }
+
+    public function testAbout() {
+
+        $controller = new SampleController();
+
+        $result = $controller->about();
 
         $this->assertNotEmpty($result, "Sample Controller test not empty");
     }

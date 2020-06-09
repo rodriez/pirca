@@ -3,8 +3,12 @@ namespace app\com\pirca\controllers;
 
 class SampleController {
 
-    public function show() {
+    public function index() {
         return "Welcome to Pirca";
+    }
+
+    public function about() {
+        return "Hi, I am Pirca";
     }
 
 }
